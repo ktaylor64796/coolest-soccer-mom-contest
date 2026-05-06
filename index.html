@@ -47,7 +47,7 @@
         radial-gradient(circle at 0% 0%, rgba(245, 158, 11, 0.15) 0, transparent 55%),
         radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.15) 0, transparent 60%),
         linear-gradient(135deg, #0f172a 0%, #020617 100%);
-      padding: 3.75rem 1.5rem 4.25rem;
+      padding: 5rem 1.5rem 5rem;
       color: #f8fafc;
       text-align: center;
     }
@@ -66,7 +66,7 @@
       border-radius: 999px;
       border: 1px solid rgba(148, 163, 184, 0.4);
       padding: 0.25rem 0.8rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
@@ -90,24 +90,24 @@
     }
 
     .an-hero-title {
-      font-size: 2.8rem;
+      font-size: 3.2rem;
       line-height: 1.15;
-      margin: 0 0 0.4rem;
+      margin: 0 0 0.5rem;
       color: #ffffff;
       font-weight: 800;
     }
 
     .an-hero-subtitle {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       color: #cbd5e1;
-      margin-bottom: 0.9rem;
+      margin-bottom: 1.25rem;
       font-weight: 500;
     }
 
     .an-hero-lede {
-      font-size: 1.08rem;
+      font-size: 1.12rem;
       max-width: 860px;
-      margin: 0.75rem auto 1.6rem;
+      margin: 0.75rem auto 2rem;
       color: #e2e8f0;
       line-height: 1.6;
       text-align: center !important;
@@ -115,14 +115,14 @@
     }
 
     .an-hero-meta {
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #ffffff;
-      margin-bottom: 1.7rem;
+      margin-bottom: 2.25rem;
     }
 
     .an-hero-meta span {
       display: inline-block;
-      margin: 0 0.6rem;
+      margin: 0 0.8rem;
       white-space: nowrap;
       color: inherit;
     }
@@ -132,30 +132,6 @@
     #an-soccer-moms .an-hero-meta strong,
     #an-soccer-moms .an-hero-meta b {
       color: #fbbf24 !important;
-    }
-
-    /* ===== SINGLE HERO IMAGE LAYOUT ===== */
-    .an-hero-img-wrap {
-      max-width: 760px;
-      margin: 0 auto 2rem;
-    }
-
-    .an-hero-img-frame {
-      position: relative;
-      border-radius: 18px;
-      overflow: hidden;
-      background: #020617;
-      box-shadow:
-        0 12px 32px rgba(0, 0, 0, 0.65),
-        0 0 0 1px rgba(255, 255, 255, 0.1);
-    }
-
-    .an-hero-img-frame img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      display: block;
     }
 
     /* ===== BUTTONS ===== */
@@ -214,7 +190,7 @@
     #an-soccer-moms .an-btn span { color: inherit !important; }
 
     .an-hero-footnote {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
       font-size: 0.8rem;
       color: #94a3b8;
     }
@@ -612,7 +588,28 @@
       line-height: 1.6;
     }
 
-    /* ===== Footer Links ===== */
+    /* ===== Footer & Links Matrix block ===== */
+    #an-soccer-moms .an-footer-links-wrap {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+      background: #f8fafc;
+    }
+    #an-soccer-moms .an-footer-links-wrap p {
+      margin: 0;
+      font-size: 0.88rem;
+      color: #64748b;
+    }
+    #an-soccer-moms .an-footer-links-wrap a {
+      color: #64748b;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(100, 116, 139, 0.6);
+    }
+    #an-soccer-moms .an-footer-links-wrap a:hover {
+      color: #f59e0b;
+      border-bottom-color: #f59e0b;
+    }
+
     #an-soccer-moms .an-footer {
       background: #f8fafc;
       border-top: 1px solid rgba(226, 232, 240, 0.9);
@@ -629,8 +626,8 @@
     }
 
     @media (max-width: 700px) {
-      #an-soccer-moms .an-hero { padding: 3rem 1.2rem 3.3rem; }
-      #an-soccer-moms .an-hero-title { font-size: 2.1rem; }
+      #an-soccer-moms .an-hero { padding: 4rem 1.2rem 4rem; }
+      #an-soccer-moms .an-hero-title { font-size: 2.3rem; }
       #an-soccer-moms .an-main { padding: 2.1rem 0 2.8rem; }
       #an-soccer-moms .an-main-inner { padding-left: 1.4rem; padding-right: 1.4rem; }
     }
@@ -654,12 +651,6 @@
         Spring 2026 • U.S. Residents Only
       </div>
 
-      <div class="an-hero-img-wrap">
-        <div class="an-hero-img-frame">
-          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" alt="Soccer match sideline chair setup ready for action">
-        </div>
-      </div>
-
       <div class="an-hero-kicker">VEGAS INSIDER</div>
       <h1 class="an-hero-title">America’s Coolest Soccer Mom Contest</h1>
       <p class="an-hero-subtitle">The Logistics. The Labor. The Legend.</p>
@@ -670,13 +661,13 @@
 
       <div class="an-hero-meta">
         <span><strong>Nominations Close:</strong> May 21, 2026 (11:59:59 PM EST)</span>
-        <span><strong>Grand Prize Total Value:</strong> $1,120 ARV</span>
+        <span><strong>Grand Prize:</strong> $1,000 + swag</span>
       </div>
 
       <div class="an-hero-actions">
         <a href="https://forms.gle/JZzqJq7HNZMZuJKE9" class="an-btn an-btn-primary" target="_blank" rel="noopener noreferrer">
           <span class="an-btn-icon">🏆</span>
-          <span>Nominate An MVP</span>
+          <span>Enter the Contest</span>
         </a>
         <a href="https://docs.google.com/document/d/e/2PACX-1vTInQCHlMwG5L0RqcoaYpPLq1_p00qsCzFo-LqxsvRwRFYnoete9mDSDtS3_8SGcJLc2TXa16u4hJ2c/pub" class="an-btn an-btn-ghost" target="_blank" rel="noopener noreferrer">
           Terms &amp; Conditions
@@ -747,7 +738,7 @@
                 To complete your entry configuration accurately via our official form gateway, map out your narrative text using the criteria limits inside our core workflow:
               </p>
               <ul>
-                <li><strong>Contact Metrics:</strong> Provide the norninator full name, current telephone contact, and mailing physical address alongside the standard Nominee contact data fields.</li>
+                <li><strong>Contact Metrics:</strong> Provide the nominator full name, current telephone contact, and mailing physical address alongside the standard Nominee contact data fields.</li>
                 <li><strong>The "Cool Mom" Vibe Paragraph:</strong> Max 300 words. Detail the emergency roadside snack stashes, surviving extreme 40-degree rain match-days, or mapping out the legendary "tuba-to-turf" schedule shifts.</li>
               </ul>
 
@@ -761,7 +752,7 @@
 
               <div class="an-cta-row">
                 <a href="https://forms.gle/JZzqJq7HNZMZuJKE9" class="an-btn an-btn-primary" target="_blank" rel="noopener noreferrer">
-                  Access Submission Form
+                  Enter the Contest
                 </a>
               </div>
 
@@ -832,6 +823,10 @@
         <p>Thank you for celebrating the incredible weekend grind with Vegas Insider. We are no longer accepting new video entries for this competitive flight.</p>
       </div>
     </div>
+  </div>
+
+  <div class="an-footer-links-wrap">
+    <p>Explore more legal frameworks: <a href="https://docs.google.com/document/d/e/2PACX-1vTInQCHlMwG5L0RqcoaYpPLq1_p00qsCzFo-LqxsvRwRFYnoete9mDSDtS3_8SGcJLc2TXa16u4hJ2c/pub" target="_blank" rel="noopener noreferrer">Official Terms and Conditions</a></p>
   </div>
 
   <footer class="an-footer">
@@ -931,7 +926,7 @@
     btn && btn.addEventListener('click', hideContestClosed);
   }
 
-  // Monitor target link parameters
+  // Target Form Parameter Boundary Safeguards
   const root = document.getElementById('an-soccer-moms');
   if (root) {
     root.addEventListener('click', function (e) {
@@ -942,7 +937,7 @@
       if (!href) return;
 
       if (href === 'https://forms.gle/JZzqJq7HNZMZuJKE9') {
-        // To shut down link access manually down the road after May 21st, uncomment the 2 lines below:
+        // To intercept clicks and show the 'Contest Closed' pop-up after May 21st, uncomment the 2 lines below:
         // e.preventDefault();
         // showContestClosed();
         return;
