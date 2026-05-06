@@ -134,10 +134,10 @@
       color: #fbbf24 !important;
     }
 
-    /* ===== HERO IMAGE CAROUSEL (16:9) ===== */
+    /* ===== SINGLE HERO IMAGE LAYOUT ===== */
     .an-hero-img-wrap {
       max-width: 760px;
-      margin: 0 auto 1.2rem;
+      margin: 0 auto 2rem;
     }
 
     .an-hero-img-frame {
@@ -150,54 +150,12 @@
         0 0 0 1px rgba(255, 255, 255, 0.1);
     }
 
-    .an-hero-slider {
-      position: relative;
+    .an-hero-img-frame img {
       width: 100%;
+      height: auto;
       aspect-ratio: 16 / 9;
-      overflow: hidden;
-    }
-
-    .an-hero-slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transform: scale(1.01);
-      transition: opacity 0.6s ease, transform 0.9s ease;
-    }
-
-    .an-hero-slide.is-active {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    .an-hero-slide img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
       display: block;
-    }
-
-    .an-hero-dots {
-      display: flex;
-      justify-content: center;
-      gap: 7px;
-      margin-top: 0.7rem;
-    }
-
-    .an-hero-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 999px;
-      border: none;
-      padding: 0;
-      background: rgba(229, 231, 235, 0.3);
-      cursor: pointer;
-      transition: transform 0.15s ease, background-color 0.15s ease;
-    }
-
-    .an-hero-dot.is-active {
-      background: var(--an-gold);
-      transform: scale(1.3);
     }
 
     /* ===== BUTTONS ===== */
@@ -393,7 +351,7 @@
       border-bottom-color: rgba(37, 99, 235, 0.9);
     }
 
-    /* Prize Table Styling */
+    /* Prize Table Layout styling */
     .an-prize-table {
       width: 100%;
       border-collapse: collapse;
@@ -448,141 +406,7 @@
       line-height: 1.5;
     }
 
-    /* ===== Submitted Profiles Carousel ===== */
-    .an-gallery-intro { margin-top: 0.5rem; margin-bottom: 0.6rem; }
-    .an-carousel { margin-top: 1.25rem; }
-
-    .an-carousel-stage {
-      position: relative;
-      border-radius: 16px;
-      overflow: hidden;
-      background: #0f172a;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-    }
-
-    .an-carousel-main {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: contain;
-      display: block;
-      background: #0f172a;
-    }
-
-    .an-carousel-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 44px;
-      height: 44px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.25);
-      background: rgba(15, 23, 42, 0.7);
-      color: #ffffff;
-      cursor: pointer;
-      z-index: 3;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.35rem;
-      transition: transform 0.15s ease, background-color 0.15s ease;
-    }
-
-    .an-carousel-arrow:hover {
-      transform: translateY(-50%) scale(1.04);
-      background: rgba(15, 23, 42, 0.9);
-    }
-
-    .an-carousel-arrow:disabled {
-      opacity: 0.35;
-      cursor: not-allowed;
-    }
-
-    .an-carousel-arrow.prev { left: 14px; }
-    .an-carousel-arrow.next { right: 14px; }
-
-    .an-carousel-meta {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      align-items: baseline;
-      margin-top: 0.9rem;
-    }
-
-    .an-carousel-caption {
-      margin: 0;
-      font-weight: 600;
-      color: #0f172a;
-      font-size: 1rem;
-      line-height: 1.35;
-    }
-
-    .an-carousel-count {
-      margin: 0;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-
-    /* Thumbnail pager */
-    .an-thumb-row {
-      margin-top: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-
-    .an-thumb-pager {
-      width: 38px;
-      height: 38px;
-      border-radius: 999px;
-      border: 1px solid rgba(17,24,39,0.12);
-      background: #ffffff;
-      color: #0f172a;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
-      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
-      transition: transform 0.12s ease, background-color 0.12s ease;
-      flex: 0 0 auto;
-    }
-
-    .an-thumb-pager:hover { transform: translateY(-1px); background: #f8fafc; }
-    .an-thumb-pager:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
-
-    .an-thumb-window { overflow: hidden; flex: 1 1 auto; }
-
-    .an-thumb-strip {
-      display: grid;
-      grid-template-columns: repeat(8, minmax(0, 1fr));
-      gap: 0.6rem;
-      align-items: center;
-    }
-
-    .an-thumb {
-      width: 100%;
-      aspect-ratio: 3 / 2;
-      border-radius: 10px;
-      overflow: hidden;
-      border: 2px solid transparent;
-      cursor: pointer;
-      background: #0f172a;
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
-      transition: transform 0.12s ease, border-color 0.12s ease;
-    }
-
-    .an-thumb:hover { transform: translateY(-1px); }
-    .an-thumb.is-active { border-color: var(--an-gold); }
-
-    .an-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* Empty-state card */
+    /* ===== Empty State Component ===== */
     #an-soccer-moms .an-empty-state {
       margin-top: 1.25rem;
       padding: 32px 16px;
@@ -804,18 +628,11 @@
       text-align: center;
     }
 
-    @media (max-width: 900px) {
-      .an-thumb-strip { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    }
-
     @media (max-width: 700px) {
       #an-soccer-moms .an-hero { padding: 3rem 1.2rem 3.3rem; }
       #an-soccer-moms .an-hero-title { font-size: 2.1rem; }
       #an-soccer-moms .an-main { padding: 2.1rem 0 2.8rem; }
       #an-soccer-moms .an-main-inner { padding-left: 1.4rem; padding-right: 1.4rem; }
-      .an-carousel-arrow { width: 40px; height: 40px; }
-      .an-thumb-pager { width: 36px; height: 36px; }
-      .an-thumb-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
 
     @media (prefers-reduced-motion: reduce){
@@ -839,16 +656,8 @@
 
       <div class="an-hero-img-wrap">
         <div class="an-hero-img-frame">
-          <div class="an-hero-slider" data-an-slider="hero" data-autoplay="true">
-            <div class="an-hero-slide is-active">
-              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" alt="Soccer match sideline chair setup" loading="eager">
-            </div>
-            <div class="an-hero-slide">
-              <img src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?auto=format&fit=crop&w=1200&q=80" alt="Snacks and orange slices on a soccer field bench" loading="lazy">
-            </div>
-          </div>
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" alt="Soccer match sideline chair setup ready for action">
         </div>
-        <div class="an-hero-dots" aria-label="Header image selector"></div>
       </div>
 
       <div class="an-hero-kicker">VEGAS INSIDER</div>
@@ -860,17 +669,17 @@
       </p>
 
       <div class="an-hero-meta">
-        <span><strong>Nominations Close:</strong> May 21, 2026 (Midnight ET)</span>
-        <span><strong>Grand Prize:</strong> Cash & Custom Gear Pack</span>
+        <span><strong>Nominations Close:</strong> May 21, 2026 (11:59:59 PM EST)</span>
+        <span><strong>Grand Prize Total Value:</strong> $1,120 ARV</span>
       </div>
 
       <div class="an-hero-actions">
-        <a href="https://forms.gle/SoccerMomNominationForm2026" class="an-btn an-btn-primary" target="_blank" rel="noopener noreferrer">
+        <a href="https://forms.gle/JZzqJq7HNZMZuJKE9" class="an-btn an-btn-primary" target="_blank" rel="noopener noreferrer">
           <span class="an-btn-icon">🏆</span>
           <span>Nominate An MVP</span>
         </a>
-        <a href="#an-mini-hoopers-terms" class="an-btn an-btn-ghost">
-          Contest Rules
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTInQCHlMwG5L0RqcoaYpPLq1_p00qsCzFo-LqxsvRwRFYnoete9mDSDtS3_8SGcJLc2TXa16u4hJ2c/pub" class="an-btn an-btn-ghost" target="_blank" rel="noopener noreferrer">
+          Terms &amp; Conditions
         </a>
       </div>
 
@@ -896,20 +705,20 @@
         </div>
 
         <div class="an-tab-panel is-active" role="tabpanel" id="an-panel-guidelines" aria-labelledby="an-tab-guidelines">
-          <div class="an-main" id="an-mini-hoopers-details">
+          <div class="an-main" id="an-soccer-moms-details">
             <div class="an-main-inner">
               <h2>How to Enter & Nominate</h2>
               <p>
                 Ready to show us the structured chaos? Fill out the official submission block below to nominate yourself, your own mom, or your sideline bestie.
               </p>
               <ul>
-                <li><strong>Nominate with Video (Required):</strong> Submit a dynamic video clip (minimum 2 minutes long). Show us the proof! Capture the ultimate trunk-gate setup, the unorganized gear bags, or film a direct-to-camera heartfelt testimonial explaining why she's the weekend MVP.</li>
-                <li><strong>The Selection:</strong> Our panel of internal judges will review the entry tapes and select four (4) elite finalists.</li>
+                <li><strong>Nominate with Video (Required):</strong> Submit a dynamic video clip (maximum length: 2 minutes long). Show us the proof! Capture the ultimate trunk-gate setup, the unorganized gear bags, or film a direct-to-camera heartfelt testimonial explaining why she's the weekend MVP.</li>
+                <li><strong>The Selection:</strong> Our panel of internal judges will review the entry tapes and select four (4) elite finalists based on energy, personality, and mindset.</li>
                 <li><strong>The Vote:</strong> Finalist videos go live for a public vote. Time to rally the local PTA network, the neighborhood group chat, and family extensions!</li>
-                <li><strong>The Crowning:</strong> The mom or guardian capturing the most public votes takes home the cash and tactical gear elements.</li>
+                <li><strong>The Crowning:</strong> The mom or guardian capturing the most public votes takes home the definitive grand prize bundle.</li>
               </ul>
 
-              <h2>The Grand Prize Bundle</h2>
+              <h2>The "Suburban Triple Crown" Grand Prize Bundle</h2>
               <table class="an-prize-table">
                 <thead>
                   <tr>
@@ -919,48 +728,46 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><strong>$1,000 Cash</strong></td>
-                    <td>Think of this as a retrospective "Service Fee" for the thousands of unpaid miles logged in carpool lanes.</td>
+                    <td><strong>$1,000 Cash Prize</strong></td>
+                    <td>Think of this as a retrospective "Service Fee" for the thousands of unpaid miles logged in carpool lanes. Sent securely via bank transfer.</td>
                   </tr>
                   <tr>
                     <td><strong>Custom Engraved Tumbler</strong></td>
-                    <td>Beautifully engraved with "America’s Coolest Soccer Mom." The single greatest premium status symbol on the sideline.</td>
+                    <td>Beautifully engraved with "America’s Coolest Soccer Mom." ($100 est. value). The single greatest premium status symbol on the sideline.</td>
                   </tr>
                   <tr>
                     <td><strong>The Dipping Tray</strong></td>
-                    <td>The legendary car-vent clip-on system for holding nuggets. Because you have wiped up enough honey mustard for one lifetime.</td>
+                    <td>The legendary car-vent clip-on snack holder system for holding nuggets ($20 est. value). Because you have wiped up enough honey mustard for one lifetime.</td>
                   </tr>
                 </tbody>
               </table>
 
               <h2>Nomination Window Details</h2>
               <p>
-                To complete your entry configuration accurately, map out your narrative text using the criteria limits inside our core workflow:
+                To complete your entry configuration accurately via our official form gateway, map out your narrative text using the criteria limits inside our core workflow:
               </p>
               <ul>
-                <li><strong>Nominator Identity:</strong> Provide your structural full name (Leave blank if you are self-nominating).</li>
-                <li><strong>Nominee Email Contact:</strong> Required for validation and scheduling baseline notifications.</li>
+                <li><strong>Contact Metrics:</strong> Provide the norninator full name, current telephone contact, and mailing physical address alongside the standard Nominee contact data fields.</li>
                 <li><strong>The "Cool Mom" Vibe Paragraph:</strong> Max 300 words. Detail the emergency roadside snack stashes, surviving extreme 40-degree rain match-days, or mapping out the legendary "tuba-to-turf" schedule shifts.</li>
               </ul>
 
               <h2>Official Eligibility & Rules</h2>
               <ul>
-                <li>Open to all moms, legal guardians, and dedicated team parents who live the mindset every single weekend. It doesn’t matter what game, instrument, or board the kids play; it only matters how you show up.</li>
-                <li>Must be a legal resident of the United States and 18 years of age or older at the step of submission.</li>
-                <li><strong>Hard Deadline:</strong> All video entries must close precisely at midnight on May 21, 2026.</li>
-                <li><strong>Key Milestone Dates:</strong> The four chosen finalists will be broadcasted on May 26, 2026. The definitive grand-prize winner will be updated and notified on June 1, 2026.</li>
+                <li>Open to all moms, legal guardians, and dedicated team parents who live the mindset every single weekend. It doesn’t matter what game, instrument, or board the kids play; it only matters how you show up. Both Entrant and Nominee must be 18 years of age or older at the step of entry.</li>
+                <li>Must be an individual legal resident of the 50 United States or Washington, D.C.</li>
+                <li><strong>Hard Submission Deadline:</strong> All video entries must close precisely at 11:59:59 PM EST on May 21, 2026.</li>
+                <li><strong>Key Milestone Dates:</strong> The four chosen finalists will be announced on or about May 26, 2026. The definitive crowned grand-prize winner will be updated and notified on or about June 1, 2026.</li>
               </ul>
 
               <div class="an-cta-row">
-                <a href="https://forms.gle/SoccerMomNominationForm2026" class="an-btn an-btn-primary" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/JZzqJq7HNZMZuJKE9" class="an-btn an-btn-primary" target="_blank" rel="noopener noreferrer">
                   Access Submission Form
                 </a>
               </div>
 
               <p class="an-smallprint">
-                This promotional contest is explicitly sponsored and executed by Vegas Insider. Any referenced school groups, public park entities, or youth sports leagues are not affiliated or coordinating direct sponsorships of this prize block.
+                This promotional contest is explicitly sponsored and executed by Vegas Insider, a wholly owned subsidiary of Better Collective USA, Inc. Promotion is in no way sponsored, endorsed, administered by or associated with any third-party social media platform or network site.
               </p>
-              <div id="an-mini-hoopers-terms"></div>
             </div>
           </div>
         </div>
@@ -969,7 +776,7 @@
           <div class="an-main">
             <div class="an-main-inner">
               <p class="an-gallery-intro">
-                Once the entry window closes on May 21st, our judges will display the video profiles of the top four matchday managers right here.
+                Once the entry window closes on May 21st, our judges will display the video profiles of the top four matchday managers right here for the public vote.
               </p>
 
               <h2 id="an-submitted-heading">Reviewing Audition Tapes...</h2>
@@ -979,27 +786,6 @@
                 <h3>Sideline Judges are standing by!</h3>
                 <p>The carpool lanes are currently filling up and tape edits are printing.</p>
                 <p><strong>Submit your mom’s legendary video and rally your town to claim the first spot in our public showcase!</strong></p>
-              </div>
-
-              <div class="an-carousel" id="an-carousel" style="display:none;">
-                <div class="an-carousel-stage">
-                  <button class="an-carousel-arrow prev" type="button" aria-label="Previous photo">‹</button>
-                  <img class="an-carousel-main" id="an-carousel-main" src="" alt="Finalist Highlight Clip">
-                  <button class="an-carousel-arrow next" type="button" aria-label="Next photo">›</button>
-                </div>
-
-                <div class="an-carousel-meta">
-                  <p class="an-carousel-caption" id="an-carousel-caption"></p>
-                  <p class="an-carousel-count" id="an-carousel-count">1 / 4</p>
-                </div>
-
-                <div class="an-thumb-row" aria-label="Thumbnail navigation">
-                  <button class="an-thumb-pager" id="an-thumb-prev" type="button" aria-label="Previous thumb">‹</button>
-                  <div class="an-thumb-window">
-                    <div class="an-thumb-strip" id="an-thumb-strip"></div>
-                  </div>
-                  <button class="an-thumb-pager" id="an-thumb-next" type="button" aria-label="Next thumb">›</button>
-                </div>
               </div>
             </div>
           </div>
@@ -1050,7 +836,7 @@
 
   <footer class="an-footer">
     <div class="an-footer-inner">
-      © 2026 Vegas Insider. All Rights Reserved. Must be 18+ to enter content loops. Promotion governed completely by internal rulebooks.
+      © 2026 Vegas Insider. All Rights Reserved. Must be 18+ to enter content loops. Promotion governed completely by internal rulebooks. For questions or complaints, please reach out to kathy.morris@bettercollective.com.
     </div>
   </footer>
 </section>
@@ -1092,51 +878,6 @@
     }
   })();
 
-  /* ===== Hero Slider Core Loop ===== */
-  const heroSlider = document.querySelector('#an-soccer-moms [data-an-slider="hero"]');
-  if (heroSlider) {
-    const slides = Array.from(heroSlider.querySelectorAll('.an-hero-slide'));
-    const dotsWrap = document.querySelector('#an-soccer-moms .an-hero-dots');
-    const AUTO_INTERVAL = 4500;
-    let index = 0;
-    let timer = null;
-
-    if (slides.length > 1 && dotsWrap) {
-      const dots = slides.map((_, i) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'an-hero-dot' + (i === 0 ? ' is-active' : '');
-        btn.setAttribute('aria-label', 'Show highlight image ' + (i + 1));
-        btn.addEventListener('click', () => {
-          goTo(i);
-          restart();
-          scheduleResize();
-        });
-        dotsWrap.appendChild(btn);
-        return btn;
-      });
-
-      function goTo(i) {
-        slides[index].classList.remove('is-active');
-        if(dots[index]) dots[index].classList.remove('is-active');
-        index = i;
-        slides[index].classList.add('is-active');
-        if(dots[index]) dots[index].classList.add('is-active');
-      }
-
-      function start() {
-        if (heroSlider.dataset.autoplay !== 'true') return null;
-        return setInterval(() => goTo((index + 1) % slides.length), AUTO_INTERVAL);
-      }
-
-      function restart() {
-        if (timer) clearInterval(timer);
-        timer = start();
-      }
-      timer = start();
-    }
-  }
-
   /* ===== Interactive Content Tabs Engine ===== */
   const tabGuidelines = document.getElementById('an-tab-guidelines');
   const tabSubmitted = document.getElementById('an-tab-submitted');
@@ -1168,7 +909,7 @@
     tabWinner.addEventListener('click', () => setTab('winner'));
   }
 
-  /* ===== Form Interception & Verification Modal Handling ===== */
+  /* ===== Verification Modal Handling ===== */
   const contestClosedModal = document.getElementById('an-contest-closed');
   function showContestClosed() {
     if (!contestClosedModal) return;
@@ -1190,7 +931,7 @@
     btn && btn.addEventListener('click', hideContestClosed);
   }
 
-  // Capture click routing safely
+  // Monitor target link parameters
   const root = document.getElementById('an-soccer-moms');
   if (root) {
     root.addEventListener('click', function (e) {
@@ -1200,8 +941,8 @@
       const href = a.getAttribute('href');
       if (!href) return;
 
-      if (href === 'https://forms.gle/SoccerMomNominationForm2026') {
-        // If you need to shut down the form links before May 21, uncomment the 2 lines below:
+      if (href === 'https://forms.gle/JZzqJq7HNZMZuJKE9') {
+        // To shut down link access manually down the road after May 21st, uncomment the 2 lines below:
         // e.preventDefault();
         // showContestClosed();
         return;
